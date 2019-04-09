@@ -26,7 +26,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:29:37
  */
 @SpringBootApplication
 public class AccountApplication {

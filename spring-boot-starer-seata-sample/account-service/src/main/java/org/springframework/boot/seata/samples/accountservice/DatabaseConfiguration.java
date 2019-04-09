@@ -16,7 +16,6 @@
 package org.springframework.boot.seata.samples.accountservice;
 
 import java.sql.SQLException;
-import java.util.Random;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -28,7 +27,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.fescar.rm.datasource.DataSourceProxy;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:29:49
  */
 @Configuration
 public class DatabaseConfiguration {

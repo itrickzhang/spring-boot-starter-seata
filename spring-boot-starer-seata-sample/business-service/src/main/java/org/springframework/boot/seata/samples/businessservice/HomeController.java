@@ -33,7 +33,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:29:24
  */
 @RestController
 public class HomeController {

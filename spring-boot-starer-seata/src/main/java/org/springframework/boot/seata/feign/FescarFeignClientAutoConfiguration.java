@@ -30,9 +30,10 @@ import feign.Client;
 import feign.Feign;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:48
  */
-
 @Configuration
 @ConditionalOnClass(Client.class)
 @AutoConfigureBefore(FeignAutoConfiguration.class)

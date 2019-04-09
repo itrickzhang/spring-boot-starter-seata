@@ -28,7 +28,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:28:37
  */
 @Configuration
 public class DatabaseConfiguration {

@@ -21,7 +21,9 @@ import org.springframework.beans.factory.BeanFactory;
 import feign.Feign;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:37
  */
 final class FescarFeignBuilder {
 

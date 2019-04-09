@@ -27,13 +27,9 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 /**
- * @author xiaojing
- *
- * Fescar HandlerInterceptor, Convert Fescar information into
- * @see com.alibaba.fescar.core.context.RootContext from http request's header in
- * {@link org.springframework.web.servlet.HandlerInterceptor#preHandle(HttpServletRequest , HttpServletResponse , Object )},
- * And clean up Fescar information after servlet method invocation in
- * {@link org.springframework.web.servlet.HandlerInterceptor#afterCompletion(HttpServletRequest, HttpServletResponse, Object, Exception)}
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:27:57
  */
 public class FescarHandlerInterceptor implements HandlerInterceptor {
 

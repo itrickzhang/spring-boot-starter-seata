@@ -20,7 +20,9 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:27:50
  */
 public class FescarHandlerInterceptorConfiguration implements WebMvcConfigurer {
 

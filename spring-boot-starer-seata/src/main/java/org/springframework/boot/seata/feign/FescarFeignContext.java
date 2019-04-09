@@ -23,8 +23,9 @@ import feign.Client;
 import org.springframework.cloud.openfeign.FeignContext;
 
 /**
- *
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:55
  */
 public class FescarFeignContext extends FeignContext {
 

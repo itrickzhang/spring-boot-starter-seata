@@ -25,9 +25,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:28:08
  */
-
 @Configuration
 @EnableConfigurationProperties(FescarProperties.class)
 public class GlobalTransactionAutoConfiguration {

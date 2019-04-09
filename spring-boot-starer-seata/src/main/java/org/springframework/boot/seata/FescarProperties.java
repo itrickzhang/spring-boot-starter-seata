@@ -19,7 +19,9 @@ package org.springframework.boot.seata;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:28:03
  */
 @ConfigurationProperties("spring.cloud.alibaba.fescar")
 public class FescarProperties {

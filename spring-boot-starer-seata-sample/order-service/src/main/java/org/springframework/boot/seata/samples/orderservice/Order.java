@@ -18,6 +18,11 @@ package org.springframework.boot.seata.samples.orderservice;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:29:05
+ */
 public class Order implements Serializable {
 	public long id;
 	public String userId;

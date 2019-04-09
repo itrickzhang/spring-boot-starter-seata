@@ -33,7 +33,9 @@ import feign.Response;
 import org.springframework.util.StringUtils;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:42
  */
 public class FescarFeignClient implements Client {
 

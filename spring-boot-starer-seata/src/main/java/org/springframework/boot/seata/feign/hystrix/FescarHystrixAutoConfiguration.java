@@ -22,9 +22,10 @@ import org.springframework.context.annotation.Configuration;
 import com.netflix.hystrix.HystrixCommand;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:12
  */
-
 @Configuration
 @ConditionalOnClass(HystrixCommand.class)
 public class FescarHystrixAutoConfiguration {

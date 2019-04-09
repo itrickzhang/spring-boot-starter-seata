@@ -26,9 +26,10 @@ import org.springframework.http.client.ClientHttpRequestInterceptor;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.http.client.support.HttpRequestWrapper;
 import org.springframework.util.StringUtils;
-
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:27:32
  */
 public class FescarRestTemplateInterceptor implements ClientHttpRequestInterceptor {
 	@Override

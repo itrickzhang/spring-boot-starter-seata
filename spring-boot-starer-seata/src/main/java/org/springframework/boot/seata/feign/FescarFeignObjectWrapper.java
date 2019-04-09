@@ -24,7 +24,9 @@ import org.springframework.cloud.openfeign.ribbon.CachingSpringLoadBalancerFacto
 import org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:27:02
  */
 public class FescarFeignObjectWrapper {
 

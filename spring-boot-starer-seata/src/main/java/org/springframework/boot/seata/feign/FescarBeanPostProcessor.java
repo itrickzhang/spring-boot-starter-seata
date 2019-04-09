@@ -20,7 +20,9 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
 /**
- * @author xiaojing
+ * 
+ * @author zcb
+ * @date 2019年4月9日 上午10:26:27
  */
 final class FescarBeanPostProcessor implements BeanPostProcessor {
 
