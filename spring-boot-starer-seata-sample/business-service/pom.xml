@@ -1,148 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
- <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starer-seata-sample</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
-    <artifactId>business-service</artifactId>
-    <name>business-service</name>
-    <description>Demo project for Spring Boot</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starer-seata-sample</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>business-service</artifactId>
+	<name>business-service</name>
+	<description>Demo project for Spring Boot</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <com.alibaba.fescar.version>0.3.1</com.alibaba.fescar.version>
-        <spring-cloud-openfeign.version>2.1.0.RELEASE</spring-cloud-openfeign.version>
-        <spring-cloud-netflix.version>2.1.0.RELEASE</spring-cloud-netflix.version>
-    </properties>
+	<properties>
+		<java.version>1.8</java.version>
+		<com.alibaba.fescar.version>0.3.1</com.alibaba.fescar.version>
+		<spring-cloud-openfeign.version>2.1.0.RELEASE</spring-cloud-openfeign.version>
+		<spring-cloud-netflix.version>2.1.0.RELEASE</spring-cloud-netflix.version>
+	</properties>
 
-    <dependencies>
-         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starer-seata</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starer-seata</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-    <!--    <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>1.1.10</version>
-        </dependency>-->
-<!--        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- <dependency> <groupId>com.alibaba</groupId> <artifactId>druid</artifactId> 
+			<version>1.1.10</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jdbc</artifactId> 
+			</dependency> -->
 
-<!--        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>-->
+		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
+			</dependency> -->
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
 
-        <!-- <dependency>
-             <groupId>org.springframework.cloud</groupId>
-             <artifactId>spring-cloud-starter-openfeign</artifactId>
-         </dependency>
-         <dependency>
-             <groupId>org.springframework.cloud</groupId>
-             <artifactId>
-                 spring-cloud-starter-netflix-hystrix</artifactId>
-         </dependency>
-         <dependency>
-             <groupId>org.springframework.cloud</groupId>
-             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
-         </dependency>-->
+		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-openfeign</artifactId> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId> 
+			spring-cloud-starter-netflix-hystrix</artifactId> </dependency> <dependency> 
+			<groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId> 
+			</dependency> -->
 
-        <!--fescar-->
-        <dependency>
-            <groupId>com.alibaba.fescar</groupId>
-            <artifactId>fescar-core</artifactId>
-            <version>${com.alibaba.fescar.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.fescar</groupId>
-            <artifactId>fescar-common</artifactId>
-            <version>${com.alibaba.fescar.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.fescar</groupId>
-            <artifactId>fescar-spring</artifactId>
-            <version>${com.alibaba.fescar.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.fescar</groupId>
-            <artifactId>fescar-rm-datasource</artifactId>
-            <version>${com.alibaba.fescar.version}</version>
-        </dependency>
+		<!--fescar -->
+		<dependency>
+			<groupId>com.alibaba.fescar</groupId>
+			<artifactId>fescar-core</artifactId>
+			<version>${com.alibaba.fescar.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.fescar</groupId>
+			<artifactId>fescar-common</artifactId>
+			<version>${com.alibaba.fescar.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.fescar</groupId>
+			<artifactId>fescar-spring</artifactId>
+			<version>${com.alibaba.fescar.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.fescar</groupId>
+			<artifactId>fescar-rm-datasource</artifactId>
+			<version>${com.alibaba.fescar.version}</version>
+		</dependency>
 
 
 
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-    </dependencies>
+		<!--<dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-openfeign</artifactId> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+	</dependencies>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-openfeign-dependencies</artifactId>
-                <version>${spring-cloud-openfeign.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-openfeign-dependencies</artifactId>
+				<version>${spring-cloud-openfeign.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix</artifactId>
-                <version>${spring-cloud-netflix.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-netflix</artifactId>
+				<version>${spring-cloud-netflix.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 
 </project>
