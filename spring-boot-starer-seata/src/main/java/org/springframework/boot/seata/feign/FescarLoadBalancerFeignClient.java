@@ -34,6 +34,7 @@ import org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient;
  */
 public class FescarLoadBalancerFeignClient extends LoadBalancerFeignClient {
 
+	@SuppressWarnings("unused")
 	private final BeanFactory beanFactory;
 
 	FescarLoadBalancerFeignClient(Client delegate,

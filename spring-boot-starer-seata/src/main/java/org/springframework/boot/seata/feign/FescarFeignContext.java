@@ -38,6 +38,7 @@ public class FescarFeignContext extends FeignContext {
 		this.delegate = delegate;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> T getInstance(String name, Class<T> type) {
 		T object = this.delegate.getInstance(name, type);
@@ -47,6 +48,7 @@ public class FescarFeignContext extends FeignContext {
 		return (T) this.fescarFeignObjectWrapper.wrap(object);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T> Map<String, T> getInstances(String name, Class<T> type) {
 		Map<String, T> instances = this.delegate.getInstances(name, type);

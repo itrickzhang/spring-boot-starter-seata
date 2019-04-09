@@ -23,7 +23,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author zcb
  * @date 2019年4月9日 上午10:28:03
  */
-@ConfigurationProperties("spring.cloud.alibaba.fescar")
+@ConfigurationProperties("spring.boot.seata")
 public class FescarProperties {
 
 	// todo support config Fescar server information

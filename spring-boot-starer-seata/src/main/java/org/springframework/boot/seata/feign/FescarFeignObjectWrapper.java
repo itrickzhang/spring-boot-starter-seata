@@ -33,6 +33,7 @@ public class FescarFeignObjectWrapper {
 	private final BeanFactory beanFactory;
 
 	private CachingSpringLoadBalancerFactory cachingSpringLoadBalancerFactory;
+	
 	private SpringClientFactory springClientFactory;
 
 	FescarFeignObjectWrapper(BeanFactory beanFactory) {

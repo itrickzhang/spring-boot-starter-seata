@@ -40,6 +40,8 @@ import org.springframework.util.StringUtils;
 public class FescarFeignClient implements Client {
 
 	private final Client delegate;
+	
+	@SuppressWarnings("unused")
 	private final BeanFactory beanFactory;
 
 	FescarFeignClient(BeanFactory beanFactory) {
@@ -65,6 +67,7 @@ public class FescarFeignClient implements Client {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private Request getModifyRequest(Request request) {
 
 		String xid = RootContext.getXID();
