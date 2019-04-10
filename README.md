@@ -1,1 +1,1 @@
-# spring-boot-starer-seata
+# spring-boot-starter-seata
