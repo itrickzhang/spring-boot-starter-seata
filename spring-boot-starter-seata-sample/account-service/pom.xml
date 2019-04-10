@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starer-seata-sample</artifactId>
+		<artifactId>spring-boot-starter-seata-sample</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<artifactId>account-service</artifactId>
@@ -20,7 +20,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starer-seata</artifactId>
+			<artifactId>spring-boot-starter-seata</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>

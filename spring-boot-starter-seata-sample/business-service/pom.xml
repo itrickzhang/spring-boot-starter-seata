@@ -5,25 +5,27 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starer-seata-sample</artifactId>
+		<artifactId>spring-boot-starter-seata-sample</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>storage-service</artifactId>
-	<name>storage-service</name>
+	<artifactId>business-service</artifactId>
+	<name>business-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 		<com.alibaba.fescar.version>0.3.1</com.alibaba.fescar.version>
+		<spring-cloud-openfeign.version>2.1.0.RELEASE</spring-cloud-openfeign.version>
+		<spring-cloud-netflix.version>2.1.0.RELEASE</spring-cloud-netflix.version>
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starer-seata</artifactId>
+			<artifactId>spring-boot-starter-seata</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -38,26 +40,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-			<version>1.1.10</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
+		<!-- <dependency> <groupId>com.alibaba</groupId> <artifactId>druid</artifactId> 
+			<version>1.1.10</version> </dependency> -->
+		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-jdbc</artifactId> 
+			</dependency> -->
 
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
+		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
+			</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-openfeign</artifactId> 
+			</dependency> <dependency> <groupId>org.springframework.cloud</groupId> <artifactId> 
+			spring-cloud-starter-netflix-hystrix</artifactId> </dependency> <dependency> 
+			<groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId> 
+			</dependency> -->
 
 		<!--fescar -->
 		<dependency>
@@ -86,7 +88,36 @@
 			<artifactId>fescar-rm-datasource</artifactId>
 			<version>${com.alibaba.fescar.version}</version>
 		</dependency>
+
+
+
+		<!--<dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-openfeign</artifactId> 
+			</dependency> -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-openfeign-dependencies</artifactId>
+				<version>${spring-cloud-openfeign.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-netflix</artifactId>
+				<version>${spring-cloud-netflix.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>
@@ -96,5 +127,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
