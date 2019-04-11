@@ -47,6 +47,7 @@ public class StorageController {
 
 	@RequestMapping(value = "/storage/{commodityCode}/{count}", method = RequestMethod.GET, produces = "application/json")
 	public String echo(@PathVariable String commodityCode, @PathVariable int count) {
+		//int a = 1/0;
 		LOGGER.info("Storage Service Begin ... xid: " + RootContext.getXID());
 		int result = jdbcTemplate.update(
 				"update storage_tbl set count = count - ? where commodity_code = ?",

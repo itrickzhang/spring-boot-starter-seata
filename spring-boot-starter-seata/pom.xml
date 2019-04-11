@@ -14,13 +14,12 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<com.alibaba.fescar.version>0.3.1</com.alibaba.fescar.version>
+		<com.alibaba.fescar.version>0.4.1</com.alibaba.fescar.version>
 		<spring-cloud-openfeign.version>2.1.0.RELEASE</spring-cloud-openfeign.version>
 		<spring-cloud-netflix.version>2.1.0.RELEASE</spring-cloud-netflix.version>
 	</properties>
 
 	<dependencies>
-
 		<!--fescar -->
 		<dependency>
 			<groupId>com.alibaba.fescar</groupId>
@@ -30,6 +29,10 @@
 				<exclusion>
 					<groupId>org.slf4j</groupId>
 					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -154,8 +157,19 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.1.1</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+						<manifestEntries>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+						</manifestEntries>
+					</archive>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
