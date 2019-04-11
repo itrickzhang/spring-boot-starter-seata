@@ -1,2 +1,2 @@
 # spring-boot-starter-seata
-seata项目:https://github.com/seata/seata
+seata介绍:https://github.com/seata/seata
